@@ -32,10 +32,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DevExpress.Data.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.Utils.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.XtraBars.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.XtraEditors.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.DirectoryServices" />
@@ -49,27 +45,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Business\BaoHiemBLL.cs" />
-    <Compile Include="Business\ChucVuBLL.cs" />
-    <Compile Include="Business\HopDongBLL.cs" />
-    <Compile Include="Business\KhenThuongBLL.cs" />
-    <Compile Include="Business\KyLuatBLL.cs" />
-    <Compile Include="Business\LuongBLL.cs" />
-    <Compile Include="Business\NguoiDungBLL.cs" />
-    <Compile Include="Business\NhanVienBLL.cs" />
-    <Compile Include="Business\PhongBanBLL.cs" />
-    <Compile Include="Business\TrinhDoHocVanBLL.cs" />
     <Compile Include="DataAccess\DataConfig.cs" />
-    <Compile Include="Entities\BaoHiemEntities.cs" />
-    <Compile Include="Entities\ChucVuEntities.cs" />
-    <Compile Include="Entities\HopDongEntities.cs" />
-    <Compile Include="Entities\KhenThuongEntities.cs" />
-    <Compile Include="Entities\KyLuatEntities.cs" />
-    <Compile Include="Entities\LuongEntities.cs" />
-    <Compile Include="Entities\NguoiDungEntities.cs" />
-    <Compile Include="Entities\NhanVienEntities.cs" />
-    <Compile Include="Entities\PhongBanEntities.cs" />
-    <Compile Include="Entities\TrinhDoHocVanEntities.cs" />
     <Compile Include="Form\DoiMatKhau.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -121,7 +97,10 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Business\" />
+    <Folder Include="Entities\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
